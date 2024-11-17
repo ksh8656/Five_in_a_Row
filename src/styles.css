@@ -1,0 +1,92 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background-color: rgba(77, 20, 20, 0.503) !important;
+  }
+  
+  .game-board {
+    margin-bottom: 20px;
+  }
+  
+  .game-info {
+    text-align: center;
+    color: white;
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  
+  .square {
+    width: 40px;
+    height: 40px;
+    background: #f0d9b5; 
+    border: 1px solid #333; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .square.x::before,
+  .square.o::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .square.x::before {
+    background-color: black; 
+  }
+  
+  .square.o::before {
+    background-color: white; 
+    border: 1px solid #999; 
+  }
+  
+  .reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-button:hover {
+    background-color: #45a049; 
+  }
+  
+  .next-player {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle; 
+    margin-left: 10px; 
+  }
+
+  .previous-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .previous-button:hover {
+    background-color: #e68900; 
+  }
+  
+  
